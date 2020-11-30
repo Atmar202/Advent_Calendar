@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 900px;
+    border: 5px solid #777;
+    margin: 1rem auto;
+    background-image: url("../img/main_pic.jpg");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "door3 door12 door1 door4"
+    "door5 door7 door11 door10"
+    "door9 door8 door6 door2"
+    "door13 door14 door18 door16"
+    "door23 door15 door21 door24"
+    "door19 door22 door17 door20"
+    ;
+}
+
+.image {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #777;
+    transition: opacity 3s;
+}
